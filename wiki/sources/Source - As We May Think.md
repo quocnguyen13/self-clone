@@ -1,0 +1,35 @@
+---
+type: source
+status: verified
+trust: primary
+sources: ["[[raw/bush-as-we-may-think.pdf]]", "[[raw/karpathy-llm-wiki.md]]", "[[raw/forte-para-method.md]]"]
+created: "2026-09-22"
+updated: "2026-09-24"
+tags: ["memex", "hypertext", "knowledge-management"]
+---
+# As We May Think
+
+**Raw file:** [[raw/bush-as-we-may-think.pdf]] · **Author or publisher:** Vannevar Bush, in *The Atlantic Monthly* · **Published:** July 1945 (clip source: https://web.mit.edu/sts.035/www/PDFs/think.pdf) · **Trust:** primary (the author's own essay proposing his idea) · **Ingested:** 2026-09-22
+
+## Summary
+Bush, then Director of the U.S. Office of Scientific Research and Development ([[raw/bush-as-we-may-think.pdf#page=1]]), argues that scientific record-keeping has fallen behind the pace of research: too much gets published for any specialist to track ([[raw/bush-as-we-may-think.pdf#page=3]]), and conventional indexing — filing each item in one fixed place — can't keep up ([[raw/bush-as-we-may-think.pdf#page=14]]). He surveys near-future mechanization (microfilm compression, dry photography, speech-to-text, faster calculating machines) ([[raw/bush-as-we-may-think.pdf#page=5]], [[raw/bush-as-we-may-think.pdf#page=7]], [[raw/bush-as-we-may-think.pdf#page=8]], [[raw/bush-as-we-may-think.pdf#page=9]]) and proposes the "memex," a personal device for storing a lifetime of books and records and linking them by association rather than classification, producing reusable, shareable "trails" through the material ([[raw/bush-as-we-may-think.pdf#page=14]], [[raw/bush-as-we-may-think.pdf#page=16]], [[raw/bush-as-we-may-think.pdf#page=17]]).
+
+## Key claims
+- The volume of research has outrun the "generations old" methods used to transmit and review it; significant findings get lost in the mass of the inconsequential, as Mendel's genetics once was ([[raw/bush-as-we-may-think.pdf#page=3]]).
+- Near-future mechanization — faster photography ([[raw/bush-as-we-may-think.pdf#page=4]]), dry (instant-development) photography ([[raw/bush-as-we-may-think.pdf#page=5]]), microfilm at up to 100:1 linear compression ([[raw/bush-as-we-may-think.pdf#page=7]]), speech-to-text via a combined Vocoder/stenotype ([[raw/bush-as-we-may-think.pdf#page=8]]), and electrical calculating machines up to 100x faster than then-current ones ([[raw/bush-as-we-may-think.pdf#page=9]]) — will change what's possible for the scientific record, without needing unknown future breakthroughs.
+- Conventional indexing is artificial: an item sits in one place under one classification path, while the human mind "operates by association," jumping along "an intricate web of trails" ([[raw/bush-as-we-may-think.pdf#page=14]]).
+- Proposes the [[wiki/concepts/Memex]], built on [[wiki/concepts/Associative indexing]], letting a user permanently link any two items and later replay, branch, annotate, and share the resulting trail ([[raw/bush-as-we-may-think.pdf#page=16]], [[raw/bush-as-we-may-think.pdf#page=17]]).
+- Anticipates "wholly new forms of encyclopedias," pre-built with associative trails, and a new profession of "trail blazers" who build useful paths through the common record for others to reuse ([[raw/bush-as-we-may-think.pdf#page=17]]).
+- Closes by speculating — explicitly labelled "a doubly involved guess," not a prediction — about bypassing the senses and recording nerve impulses directly ([[raw/bush-as-we-may-think.pdf#page=18]]).
+
+## Entities and concepts
+- [[wiki/entities/Vannevar Bush]]
+- [[wiki/concepts/Memex]]
+- [[wiki/concepts/Associative indexing]]
+
+## Conflicts and open points
+- [[wiki/sources/Source - LLM Wiki]] says the compiled-wiki idea is "related in spirit to" this piece's [[wiki/concepts/Memex]], describing Bush's vision as private and actively curated ([[raw/karpathy-llm-wiki.md]]). One difference, not a conflict: Bush has people build the trails — he even anticipates a profession of "trail blazers" ([[raw/bush-as-we-may-think.pdf#page=17]]) — while the gist has the LLM do the upkeep ([[raw/karpathy-llm-wiki.md]]). See [[wiki/overview.md]] for the synthesis.
+- **Disagreement with the PARA post: is one home per item the problem or the fix?**
+  - Bush says filing an item in one place under one classification path is artificial ([[raw/bush-as-we-may-think.pdf#page=14]]).
+  - [[wiki/sources/Source - The PARA Method]] files each item in one place, chosen by project and actionability, so you know exactly where to find it ([[raw/forte-para-method.md]]).
+  - Both reject broad subject classification. Contested on [[wiki/concepts/Associative indexing]] and [[wiki/concepts/PARA method]].

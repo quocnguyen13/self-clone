@@ -1,0 +1,56 @@
+properties:
+  file.name:
+    displayName: Page
+  note.status:
+    displayName: Status
+  note.type:
+    displayName: Type
+  note.updated:
+    displayName: Updated
+  note.sources:
+    displayName: Sources
+  note.created:
+    displayName: Created
+  note.origin:
+    displayName: Origin
+  note.related:
+    displayName: Related
+  note.checked:
+    displayName: Checked
+views:
+  - type: table
+    name: Needs attention
+    filters:
+      and:
+        - file.inFolder("wiki")
+        - file.ext == "md"
+        - or:
+            - status == "unverified"
+            - status == "contested"
+    groupBy:
+      property: status
+      direction: DESC
+    order:
+      - file.name
+      - type
+      - updated
+      - sources
+    sort:
+      - property: updated
+        direction: ASC
+    columnSize:
+      note.type: 103
+  - type: table
+    name: Draft queue
+    filters:
+      and:
+        - file.inFolder("mine/drafts")
+        - file.ext == "md"
+    order:
+      - file.name
+      - created
+      - checked
+      - related
+    sort:
+      - property: created
+        direction: ASC

@@ -1,0 +1,169 @@
+# Log
+
+Append-only history of ingests, filings and lints. Claude adds one entry per operation, newest at the bottom.
+
+## [2026-09-22] ingest | LLM Wiki
+Pages: +7 new, 0 updated. No conflicts (first source in the wiki). 3 draft insights filed in mine/drafts/.
+
+## [2026-09-22] ingest | As We May Think
+Pages: +4 new (source, entity, 2 concepts), 0 updated. Overview rewritten (now unverified: carries one general-knowledge claim connecting this source to the compiled-wiki pattern). No conflicts — first source on memex/associative indexing. 2 draft insights filed in mine/drafts/.
+Review: 2 existing pages updated (Compiled wiki, Source - LLM Wiki); links to source 1 added; overview now verified.
+
+## [2026-09-22] ingest | Evergreen notes
+Pages: +3 new (source, entity, concept), 2 updated (Associative indexing, Compiled wiki: Related links only). No conflicts; open tension on who writes (Matuschak vs Karpathy) noted, not contested. Flag: partial clip, 15 linked notes not captured, listed as gaps. Overview rewritten. 2 draft insights filed in mine/drafts/.
+
+## [2026-09-22] ingest | Contextual Retrieval
+Pages: +7 new (source, entity Anthropic, 5 concepts), 3 updated (Compiled wiki, Wiki index and log, Source - LLM Wiki). Conflict: Karpathy's "RAG builds nothing up" vs Anthropic's one-time per-chunk LLM pass; contested on Compiled wiki, Retrieval-augmented generation, both source pages, overview. Flags: incomplete clip (footnote 1 missing, charts and Appendix I as images, Appendix II not captured); vendor benchmark; embedded contextualizer prompt treated as data. Overview rewritten. 2 draft insights filed in mine/drafts/.
+Review: contested narrowed to Compiled wiki and Retrieval-augmented generation; the two source pages and the overview are verified and record the disagreement. The accumulation claim now cites the preprocessing wording, not the cost figure.
+
+## [2026-09-22] ingest | The PARA Method
+Pages: +4 new (source, entity Tiago Forte, concepts PARA method and Organizing by actionability), 6 updated (Evergreen notes, Associative indexing, Compiled wiki, Source - Evergreen notes, Source - As We May Think, Source - LLM Wiki). Conflict: project-first hierarchy (Forte) vs associative ontology and concept orientation (Matuschak, Bush); contested on PARA method, Organizing by actionability, Evergreen notes, Associative indexing; source pages and overview record it and stay verified. Open point, not contested: compiled wiki's concept pages vs PARA's projects-first order. Flag: clip possibly partial (ends without a conclusion, refers to "this book"). Overview rewritten. 2 draft insights filed in mine/drafts/.
+
+## [2026-09-24] file | Compare the PARA method and evergreen notes as ways to organise what I read
+Pages: +1 analysis, 3 updated (Related links). Status: contested. Reworded: "Resources rank below projects and areas" is not in raw/forte-para-method.md; dropped from Evidence and moved to Caveats as uncited on Organizing by actionability. Other evidence confirmed in raw/.
+
+## [2026-09-24] lint | report-2026-09-24
+Scanned 27 pages, deep-checked 27. Findings: 14 (7 high, 6 medium, 1 low). Checks ticked: 1. No wiki pages changed.
+
+## [2026-09-24] lint | apply report-2026-09-24
+Applied: 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14. Skipped: none (5 not requested). Pages changed: 13. Status changes: none.
+
+## [2026-09-24] lint | report-2026-09-24-2
+Scanned 27 pages, deep-checked 13. Findings: 3 (2 high, 0 medium, 1 low). Checks ticked: 0. No wiki pages changed.
+
+## [2026-09-24] lint | apply report-2026-09-24-2
+Applied: 1, 2, 3. Skipped: none. Pages changed: 8. Status changes: none.
+
+## [2026-09-25] drafts | 11 checked
+Clean: 2. With problems: 9. Already checked: 0. Insights to re-read: 0.
+
+## [2026-09-25] drafts | 0 checked
+Clean: 0. With problems: 0. Already checked: 0. Insights to re-read: 1.
+
+## [2026-09-28] ingest | FSMA 2000 Part 1A
+Pages: +11 new, 0 updated. No conflicts. Flags: clip lost section numbers on inserted sections and s. 1H(8) text; s. 3B(1)(c) shown in two versions; s. 22A (PRA-regulated activities) not in source, so Solo and dual regulation is unverified (general knowledge).
+
+## [2026-10-06] ingest | FCA self-description
+Set: set-2026-10-06, 1 source (1 primary, 0 secondary, 0 commentary). Pages: +1 new (Source - About the FCA); 7 updated (Financial Conduct Authority, Prudential Regulation Authority, HM Treasury, Regulatory objectives, Solo and dual regulation, Regulatory principles, Source - FSMA 2000 Part 1A). Draft: FCA authorisation is a gate, not a licence, so a regulated product carries supervision cost for its whole life. Conflicts: 1, waiting for my decision. Flags: PRA figure is the FCA's statement, not the PRA's; £14-per-£1 is a self-estimate; clip has split link text and one undated change-log entry.
+
+## [2026-10-06] ingest | resolve set-2026-10-06
+Decided: 1c. Skipped: none. Pages changed: Financial Conduct Authority (and the conflict notes on Source - About the FCA, Source - FSMA 2000 Part 1A, overview). Status changes: Financial Conduct Authority: contested → verified.
+
+## [2026-10-06] ingest | UK prudential and conduct regulators
+Set: set-2026-10-06-2, 5 sources (3 primary, 1 secondary, 1 commentary). Pages: +18 new (Source - The PRA's approach to banking supervision, Source - FCA and Bank of England MoU 2024, Source - Bank of England prudential regulation page, Source - Commons Library briefing on the FCA 2016, Source - Wikipedia on the FCA, Financial Policy Committee, Prudential Regulation Committee, Financial Services Compensation Scheme, Payment Systems Regulator, Proactive Intervention Framework, Potential impact categories, Threshold Conditions, Ring-fencing, Resolvability, Senior Managers and Certification Regime, Regulatory capital framework, New bank authorisation, Strong customer authentication); 10 updated (Financial Conduct Authority, Prudential Regulation Authority, Bank of England, HM Treasury, Regulatory objectives, Regulatory principles, FCA-PRA coordination, Solo and dual regulation, Source - FSMA 2000 Part 1A, Source - About the FCA). Drafts: For a dual-regulated bank the PRA runs every gate but the FCA can veto it, so conduct readiness sets the critical path; In a ring-fenced bank, payments and overdrafts are core services, so changing them is a prudential matter as well as a product one. Conflicts: 3, waiting for my decision. Flags: Wikipedia's 58,000 figure rests on a 2010 source and one footnote is unused; BoE page is mostly links; briefing file was named CBP-7488 for paper 7448; PDF page citations for the PRA approach run 2 ahead of printed numbers.
+
+## [2026-10-06] ingest | resolve set-2026-10-06-2
+Decided: 1a, 2a, 3a. Skipped: none. Pages changed: Prudential Regulation Authority, Solo and dual regulation, Financial Conduct Authority (and the conflict notes on Source - Bank of England prudential regulation page, Source - About the FCA, Source - Wikipedia on the FCA, Source - FSMA 2000 Part 1A, overview). Status changes: Prudential Regulation Authority: contested → verified; Financial Conduct Authority: contested → verified.
+
+## [2026-10-06] lint | report-2026-10-06
+Scanned 57 pages, deep-checked 57. Findings: 7 (6 high, 0 medium, 1 low). Checks ticked: 0. No wiki pages changed.
+
+## [2026-10-06] lint | apply report-2026-10-06
+Applied: 1a, 2, 3, 4, 5, 6. Skipped: none (7 not requested). Pages changed: 11 (Senior Managers and Certification Regime, New bank authorisation, FCA-PRA coordination, Solo and dual regulation, Financial Conduct Authority, Source - The PRA's approach to banking supervision, Source - About the FCA, Source - FCA and Bank of England MoU 2024, Source - Commons Library briefing on the FCA 2016, Strong customer authentication, overview). Status changes: none.
+
+## [2026-10-06] lint | apply report-2026-10-06
+Applied: 7. Skipped: none. Pages changed: 5 (Source - The PRA's approach to banking supervision, Prudential Regulation Authority, Source - Commons Library briefing on the FCA 2016, FCA-PRA coordination, overview). Status changes: none.
+## [2026-10-12] research | Financial Ombudsman Service complaints against a bank
+Report: research-2026-10-12-financial-ombudsman-bank-complaints, 25 facts from 9 sources (9 primary, 0 secondary, 0 commentary). To clip: 8 (FSMA 2000 s. 228; DISP 2.7; Glossary micro-enterprise; Glossary small business; DISP 1.6; DISP 2.8; DISP 3.7; FOS Complain to the financial business). Searches: 7; pages read: 10. No wiki pages changed.
+
+## [2026-10-14] ingest | Financial Ombudsman Service complaints against a bank
+Set: set-2026-10-14, 7 sources (7 primary, 0 secondary, 0 commentary). Pages: +13 new (Source - DISP 2.8 Referral time limits, Source - DISP 2.7 Complainant eligibility, Source - DISP 3.7 Ombudsman awards, Source - DISP 1.6 Complaints time limit rules, Source - FCA glossary small business, Source - FCA glossary micro-enterprise, Source - FOS How to complain, Financial Ombudsman Service, Complaint handling time limits, Final response, Ombudsman referral time limits, Eligible complainant, Ombudsman awards); 2 updated (Financial Conduct Authority, Consumer protection objective). Drafts: Payment and e-money complaints need their own workflow, because their clock runs in business days and the Ombudsman's door opens the day it is missed; Small-business complaints should be handled as Ombudsman-eligible by default, because the rules put the burden of doubt on the bank. Conflicts: 2, waiting for my decision. Flags: inbox file "FCA Handbook.md" was the micro-enterprise definition; FOS page reached via a redirect from the capture-list link; FOS video transcript not captured.
+
+## [2026-10-14] ingest | resolve set-2026-10-14
+Decided: 1a, 2a. Skipped: none. Pages changed: Complaint handling time limits (and the conflict notes on Source - FOS How to complain, Source - DISP 1.6 Complaints time limit rules, Source - DISP 2.7 Complainant eligibility, overview). Status changes: Complaint handling time limits: contested → verified.
+
+## [2026-10-14] ingest | Who regulates what in UK banking (Claude output)
+Set: set-2026-10-14-2, 1 source (0 primary, 0 secondary, 0 commentary, 1 AI). Pages: +5 new (Source - Claude on who regulates what (2026-09-27), TSB Bank, Financial Services and Markets Bill 2026–27, Monetary Policy Committee, Operational resilience); 10 updated (Solo and dual regulation, Payment Systems Regulator, Bank of England, Financial Conduct Authority, Prudential Regulation Authority, Financial Ombudsman Service, Ring-fencing, New bank authorisation, Source - The PRA's approach to banking supervision, Source - FCA and Bank of England MoU 2024). Conflicts: none. Flags: the note refers to a "principal file" and "live issues register" not in the vault. AI claims: 28 backed, 67 unbacked, 1 contradicted.
+
+## [2026-10-14] lint | report-2026-10-14
+Scanned 75 pages, deep-checked 48. Findings: 7 (5 high, 2 medium, 0 low). Checks ticked: 0. No wiki pages changed.
+
+## [2026-10-14] lint | apply report-2026-10-14
+Applied: 1, 2, 3, 4, 5, 6a, 7a. Skipped: none. Pages changed: 12 (Source - DISP 1.6 Complaints time limit rules, Source - FCA glossary micro-enterprise, Source - FOS How to complain, Source - DISP 3.7 Ombudsman awards, Financial Conduct Authority, Prudential Regulation Authority, Bank of England, Financial Ombudsman Service, Prudential Regulation Committee, Ring-fencing, New bank authorisation, overview), plus index.md counts. Status changes: none.
+
+## [2026-10-14] ingest | FCA Final Notice to TSB Bank (2018 migration)
+Set: set-2026-10-14-3, 1 source (1 primary, 0 secondary, 0 commentary). Pages: +3 new (Source - FCA Final Notice to TSB Bank 2022, Principles for Businesses, Outsourcing of critical or important functions); 5 updated (TSB Bank, Operational resilience, Solo and dual regulation, Financial Conduct Authority, Source - Claude on who regulates what (2026-09-27)). Conflicts: none. Flags: the notice gives the migration weekend as both "20 - 22 April" and "21/22 April" 2018; 22 April stated as go-live. AI claims backed: 20 on TSB Bank, plus the FCA half of one on each of TSB Bank, Operational resilience and Solo and dual regulation. Capture list: 1 line ticked.
+
+## [2026-10-17] ingest | FSMA 2000 (2026-09), map
+Set: set-2026-10-17, 1 source with its contents companion (1 primary, 0 secondary, 0 commentary). Pages: +1 new (the map: Source - FSMA 2000 (2026-09)); 0 updated. Plan: 8 parts (II, 4A, XVI, 1A compare, Sch 6, XV–15A, 9B, Sch 2), all located. Conflicts: none. Flags: PDF includes prospective provisions; PDF (10 Sep 2026) and contents (17 Oct 2026) differ in date; Part 1A in the PDF is older than the clip. Capture list: no ticks (lines tick as parts compile).
+
+## [2026-10-17] ingest | FSMA 2000 (2026-09), Part II
+Set: set-2026-10-17-2, 1 source, part II (pp. 51–70) of 8 planned parts, primary. Pages: +3 new (Source - FSMA 2000 (2026-09) - Part II; General prohibition; Financial promotion); 7 updated (Source - FSMA 2000 (2026-09), the map: Part II compiled, 1 of 8; Source - FSMA 2000 Part 1A; Source - Claude on who regulates what (2026-09-27): 4 claims lose `· AI`; Regulated financial services; Solo and dual regulation; HM Treasury; Financial Conduct Authority). Draft: For a lender, a permission gap puts the loan book at risk, not just a compliance finding. Conflicts: none. Flags: none; no prospective text in Part II. Capture list: no ticks (the ss. 19, 23, 55E–55F line waits for Part 4A).
+
+## [2026-10-18] lint | report-2026-10-18
+Scanned 82 pages, deep-checked 40. Findings: 4 (0 high, 3 medium, 1 low). Checks ticked: 0. No wiki pages changed.
+
+## [2026-10-18] lint | apply report-2026-10-18
+Applied: 1a, 2a, 3a, 4. Skipped: none. Pages changed: 15 (Source - Claude on who regulates what (2026-09-27), Source - FSMA 2000 (2026-09), Source - FSMA 2000 (2026-09) - Part II, Outsourcing of critical or important functions, General prohibition, Financial promotion, Regulated financial services, Solo and dual regulation, HM Treasury, Financial Conduct Authority, New bank authorisation, Threshold Conditions, Financial Ombudsman Service, Financial Services Compensation Scheme, Ring-fencing), plus index.md counts. Status changes: none.
+
+## [2026-10-20] ingest | FSMA 2000 (2026-09), Part 4A
+Set: set-2026-10-20, 1 source, part 4A (pp. 82–119) of 8 planned parts, primary. Pages: +2 new (Source - FSMA 2000 (2026-09) - Part 4A; Part 4A permission); 12 updated (Source - FSMA 2000 (2026-09), the map: Part 4A compiled, 2 of 8; Source - FSMA 2000 Part 1A; Source - FCA and Bank of England MoU 2024; Source - The PRA's approach to banking supervision; Source - Claude on who regulates what (2026-09-27): 2 claims lose `· AI`; Threshold Conditions; New bank authorisation; FCA-PRA coordination, now contested; Solo and dual regulation; Financial promotion; Financial Conduct Authority; Prudential Regulation Authority). Draft: A product that needs a new regulated activity should be planned around a six-month clock that starts only when the application is complete. Conflicts: 1, waiting for my decision. Flags: none; no prospective text in Part 4A. Capture list: ticked the ss. 19, 23, 55E–55F line.
+
+## [2026-10-20] ingest | resolve set-2026-10-20
+Decided: 1c. Skipped: none. Pages changed: FCA-PRA coordination; Source - FSMA 2000 (2026-09) - Part 4A; Source - FCA and Bank of England MoU 2024; overview.md; index.md. Status changes: FCA-PRA coordination: contested → verified.
+
+## [2026-10-20] lint | report-2026-10-20
+Scanned 84 pages, deep-checked 23. Findings: 5 (1 high, 2 medium, 2 low). Checks ticked: 0. No wiki pages changed.
+
+## [2026-10-20] lint | apply report-2026-10-20
+Applied: 1, 2a, 3a, 4, 5. Skipped: none. Pages changed: 6 (Source - FSMA 2000 (2026-09) - Part 4A, Source - FSMA 2000 (2026-09) - Part II, Part 4A permission, FCA-PRA coordination, Prudential Regulation Authority, overview). Status changes: none.
+
+## [2026-10-20] ingest | FSMA 2000 (2026-09), Part XVI
+Set: set-2026-10-20-2, 1 source, part XVI (pp. 596–609) of 8 planned parts, primary. Pages: +1 new (Source - FSMA 2000 (2026-09) - Part XVI); 5 updated (Source - FSMA 2000 (2026-09), the map: Part XVI compiled, 3 of 8; Financial Ombudsman Service; Ombudsman awards; Eligible complainant; Financial Conduct Authority). Draft: An ombudsman decision binds the bank only when the complainant accepts it, so complaint journeys should plan for both outcomes. Conflicts: none. Flags: none; no prospective text in Part XVI; ss. 226A and 234A omitted. Capture list: ticked the s. 228 line.
+
+## [2026-10-20] lint | report-2026-10-20-2
+Scanned 85 pages, deep-checked 7. Findings: 4 (2 high, 1 medium, 1 low). Checks ticked: 0. No wiki pages changed.
+
+## [2026-10-20] lint | apply report-2026-10-20-2
+Applied: 2, 4. Skipped: 1, 3 (options, no letter given). Pages changed: 3 (Financial Ombudsman Service, Financial Conduct Authority, Source - FSMA 2000 (2026-09) - Part XVI). Status changes: none.
+
+## [2026-10-20] lint | apply report-2026-10-20-2
+Applied: 1a, 3a. Skipped: none. Pages changed: 5 (Financial Ombudsman Service, Source - FSMA 2000 (2026-09) - Part XVI, Ombudsman awards, Eligible complainant, overview), plus the Part XVI line in index.md. Status changes: none.
+
+## [2026-10-20] ingest | FSMA 2000 (2026-09), Part 1A
+Set: set-2026-10-20-3, 1 source, part 1A (pp. 5–51) of 8 planned parts, primary; a compare against the Part 1A clip. Pages: +0 new; 1 updated (Source - FSMA 2000 (2026-09): Part 1A row compared, open point on s. 3B(1)(c) answered). Conflicts: none; the two texts match word for word across ss. 1A–3T. Flags: the PDF does not settle the s. 3B(1)(c) open point; two stray read-only shell commands (`wc -l` on the clip, `git show HEAD:log.md`).
+
+## [2026-10-20] lint | report-2026-10-20-3
+Scanned 85 pages, deep-checked 7. Findings: 1 (0 high, 1 medium, 0 low). Checks ticked: 0. No wiki pages changed.
+
+## [2026-10-20] lint | apply report-2026-10-20-3
+Applied: 1. Skipped: none. Pages changed: 0, plus the Financial Ombudsman Service line in index.md. Status changes: none.
+
+## [2026-10-20] file | Compare Bush's memex trails with the compiled wiki's index and log as ways to find things again
+Pages: +1 analysis; 4 updated, Related links (Memex, Associative indexing, Wiki index and log, Compiled wiki). Status: verified. Evidence confirmed in raw/. Source - As We May Think listed under Related but has no Related list, so not back-linked.
+
+## [2026-10-27] lint | report-2026-10-27
+Scanned 86 pages, deep-checked 7. Findings: 1 (0 high, 1 medium, 0 low). Checks ticked: 1. No wiki pages changed.
+
+## [2026-10-27] lint | apply report-2026-10-27
+Applied: 1b. Skipped: 2 (not in the report, which has one finding). Pages changed: 1 (Compare Bush's memex trails with the compiled wiki's index and log as ways to find things again: Source - As We May Think removed from Related). Status changes: none.
+
+## [2026-10-27] lint | report-2026-10-27-2
+Scanned 86 pages, deep-checked 1 (Compare Bush's memex trails with the compiled wiki's index and log as ways to find things again). Findings: 0 (0 high, 0 medium, 0 low). Checks ticked: 0. No wiki pages changed.
+
+## [2026-10-29] drafts | 9 checked
+Clean: 2. With problems: 7. Already checked: 0. Insights to re-read: 3. Not checked: 5, whose claims rest on raw/fca-final-notice-tsb-2022.pdf or raw/uk-parliament-fsma-2000-2026-09.pdf (PDF page reader missing; too large to open whole); left without `checked` for the next run. Drafts changed (Check section and `checked`): The FCA's consumer protection objective is a calibration rule…; FCA-PRA coordination is mutual by default…; In a dual-regulated bank every product answers to both regulators…; FCA authorisation is a gate, not a licence…; In a ring-fenced bank, payments and overdrafts are core services…; For a dual-regulated bank the PRA runs every gate…; Payment and e-money complaints need their own workflow…; Small-business complaints should be handled as Ombudsman-eligible by default…; At a dual-regulated bank, a risky change programme is a prudential matter…. No wiki pages changed.
+
+## [2026-10-29] drafts | 0 checked
+Clean: 0. With problems: 0. Already checked: 9. Insights to re-read: 3. Partly checked: 5. Every cited claim rests on raw/fca-final-notice-tsb-2022.pdf or raw/uk-parliament-fsma-2000-2026-09.pdf, and the PDF page reader (pdftoppm) is still missing. Links, open pages, overlaps, section headings (against raw/uk-parliament-fsma-2000-contents-2026-10.md) and the Markdown sources were checked; 0 problems found. Check section written, `checked` left unset so the next run picks them up. Drafts changed (Check section only): A go-live attestation is only as good as the evidence the signer has seen…; An outsourcer's readiness letter is a forecast, not evidence…; For a lender, a permission gap puts the loan book at risk…; A product that needs a new regulated activity should be planned around a six-month clock…; An ombudsman decision binds the bank only when the complainant accepts it…. No wiki pages changed.
+
+## [2026-10-29] drafts | 5 checked
+Clean: 0. With problems: 5. Already checked: 9. Insights to re-read: 3. PDF pages now open, so every cited page was read and the earlier Check sections replaced. Drafts changed (Check section and `checked`): A go-live attestation is only as good as the evidence the signer has seen… (2); An outsourcer's readiness letter is a forecast, not evidence… (2); For a lender, a permission gap puts the loan book at risk… (3); A product that needs a new regulated activity should be planned around a six-month clock… (2); An ombudsman decision binds the bank only when the complainant accepts it… (3). No wiki pages changed.
+
+## [2026-10-29] drafts | 0 checked
+Clean: 0. With problems: 0. Already checked: 14. Insights to re-read: 4 (RAG versus a compiled wiki…; Banking document search needs exact match…; An LLM can maintain the trails…; Epics that never close are areas, not projects, whose `reviewed` 2026-09-20 predates its `created` 2026-09-25). No drafts or wiki pages changed.
+
+## [2026-10-29] file | How does Contextual Retrieval combine embedding and BM25, and where does reranking fit
+Pages: +1 analysis; 3 updated, Related links (Contextual Retrieval, BM25, Reranking). Status: verified. Evidence confirmed in raw/. One claim added from raw that no wiki page carries: reranking reduces downstream cost and latency (raw line 143).
+
+## [2026-10-29] lint | report-2026-10-29
+Scoped since report-2026-10-27-2. Read in full 4 of 87 pages, deep-checked 1. Findings: 1 (0 high, 1 medium, 0 low). Checks ticked: 0. No wiki pages changed.
+
+## [2026-10-29] lint | apply report-2026-10-29
+Applied: 1b. Skipped: none. Pages changed: 2 (Reranking: trade-off bullet now gives the downstream saving and the added runtime latency; Source - Contextual Retrieval: key claim on reranking cost reworded to match). Status changes: none.
+
+## [2026-10-29] lint | report-2026-10-29-2
+Scoped since report-2026-10-29. Read in full 3 of 87 pages, deep-checked 2. Findings: 1 (0 high, 1 medium, 0 low). Checks ticked: 0. No wiki pages changed.
+
+## [2026-10-29] lint | apply report-2026-10-29-2
+Applied: 1. Skipped: none. Pages changed: 1 (How does Contextual Retrieval combine embedding and BM25, and where does reranking fit: Evidence line on the reranking saving now reads "via Reranking"; stale caveat about Reranking removed). Status changes: none.

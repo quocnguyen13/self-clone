@@ -1,0 +1,138 @@
+---
+type: project-doc
+project: thinking-system
+status: active
+trust: working
+origin: claude
+created: 2026-09-16
+reviewed: 2026-10-06
+tags: [project/thinking-system, obsidian]
+---
+
+# 70 Obsidian Essentials
+
+Back to [[00 Project Home]] · Structure in [[32 Vault Blueprint]]
+
+> [!info] What changed
+> This was a seven-stage curriculum. It is now a one-page reference. There are no lessons, stages, or exercises: you pick things up inside the modules as you need them, and everything below can be learned in the minutes it takes to use it ([[03 Decision Log]] D-026).
+
+**Mod** means Ctrl on Windows.
+
+## 1. One-time setup (module M1, about 20 minutes)
+- Install Obsidian; create the vault `Second-Brain` at `C:\Users\<you>\Vaults\Second-Brain`, outside OneDrive.
+- Settings → Files and links: "Automatically update internal links" on; new notes to `mine/scratch` ([[03 Decision Log]] D-029); attachment folder `raw/assets`.
+- Settings → Core plugins: Backlinks, Outgoing links, Graph view, Properties view, Bases, Templates, Daily notes, Bookmarks. Sync and Publish off.
+- Settings → Daily notes: new file location `mine/journal`. Settings → Templates: template folder location `system/templates`.
+- Install the Obsidian Web Clipper browser extension. In its settings, add `Second-Brain` under General → Vaults, then set the Default template's Note location to `inbox/sources` (the folder only, no vault name). This isn't learning, it's the capture pipeline for [[33 Input Zones]].
+- Inside Obsidian and in Markdown, folder paths use `/`. PowerShell uses `\`.
+
+## 2. The whole toolkit
+| Need | How |
+|---|---|
+| Find any note | Mod+O, type part of the title |
+| Run any command | Mod+P |
+| Switch edit and reading view | Mod+E |
+| Search the vault | Mod+Shift+F, with `path:`, `tag:`, `"exact phrase"`, `-exclude` |
+| See the link graph | Mod+G; the local graph shows one note's neighbourhood |
+| Link a note | `[[Title]]`, `[[Title#Heading]]`, `[[Title\|display text]]` |
+| Embed a note | `![[Title]]` |
+| See what links here | Backlinks pane, at the bottom or in the sidebar |
+| Edit properties | The table at the top of a note, in Live Preview |
+| Build a filtered view | Bases: a table over properties, e.g. `status` is `unverified` |
+
+That is the entire set this system needs. Anything else, look up at help.obsidian.md or ask in the session.
+
+## 3. The one skill that matters: reviewing an ingest
+The wiki is only trustworthy if someone checks it, and that someone is you. After each set, spend ten minutes in its set review, `system/ingest/set-YYYY-MM-DD.md` ([[03 Decision Log]] D-086):
+1. **Conflicts.** Read each one and follow both citations into `raw/`. Decide each with a letter: `/ingest resolve 1a 2d`. Unsure means **d**: leave it open, and the page stays `contested`.
+2. **Weakest facts.** Read the commentary and secondary facts; they rest on the weakest sources. Open the folded Primary list only where something looks off.
+3. **Trace.** Under "Check first", click one claim per level through to `raw/` and confirm it's really there.
+4. **Pages.** Open one new or updated page. Read its properties, `status` and `sources`, and `trust` on a source page. If a page says `unverified` or `contested`, read why.
+
+Then tell Claude the review is done. It shows what changed and commits with your approval; `git push` is yours (D-090). If Claude Code asks to run any shell command other than `git status`, `git add` or `git commit` during an ingest, answer No: the skill edits files with its file tools only.
+
+If you stop doing this, the provenance rules in [[31 Trust and Provenance]] become decoration. Nothing else in this document is load-bearing; this is.
+
+## 4. The weekly review (modules M5 and M6)
+Two views live in one Bases file, `system/views/Review.base` ([[03 Decision Log]] D-058). Bookmark it once (right-click the file → Bookmark); the view switcher at the top of the table moves between the two.
+- **Needs attention:** wiki pages that are `unverified` or `contested`, `unverified` first. `unverified` means a claim needs a citation or a fix; `contested` means two sources disagree and the call is yours (D-057).
+- **Draft queue:** Claude's insight drafts in `mine/drafts/`, oldest first, with the date `/drafts` checked each one.
+
+About 45 minutes, once a week. The first `/lint` of each month takes longest, because it checks every page against `raw/` (D-060); other weeks check only what changed (D-056).
+1. **Start clean.** At the vault root, `git status`; commit anything left over.
+2. **Lint.** Start `claude` at the vault root and run `/lint`. Open the new report in `system/lint/`. Trace any finding you doubt to `raw/`, as in §3.
+3. **Apply.** Run `/lint apply <numbers>` for the fixes you agree with, adding the letter where a finding offers options, e.g. `/lint apply 1 2 4b`. Then `git add -A`, `git diff --staged`, and `git commit -m "lint: report-YYYY-MM-DD"`. Findings you leave come back next week marked "Open since".
+4. **Needs attention.** For each page, read its one-line reason under "Already flagged" in the report. Leave it, add a check to `inbox/checks.md`, or clip a source that would settle it.
+5. **Drafts and insights** ([[03 Decision Log]] D-063 to D-065). Run `/drafts`, then commit its checks: `git add -A`, `git diff --staged`, `git commit -m "drafts: check YYYY-MM-DD"`. Open the Draft queue and decide every draft; none waits for next week.
+   - **Keep:** in the file explorer, right-click `mine/insights` → New note, and title it as your claim. Mod+P → "Templates: Insert template" → Insight template. Right-click the note's tab → Split right, then open the draft in the right pane (Mod+O). Write the idea and your reasons in your own words, copying links but not sentences; leave out anything the Check marks "not in raw/". At least one Relations line links a page in `wiki/`; put the same pages in `related`. Set `status: active`, then delete the draft (right-click → Delete). Commit: `git add -A`, `git commit -m "insight: <title> (from draft: <draft title>)"`.
+   - **Delete:** anything you wouldn't defend. Unsure means delete; git keeps every draft.
+   - **Re-read:** for each insight `/drafts` listed, open the wiki page that changed. Edit the insight if the change matters, or archive it (`status: archived`, plus a line saying why). Either way, set `reviewed` to today.
+   Five insights you wrote is the last MVP criterion ([[11 Project Charter]] §6).
+6. **Scratch.** Empty `mine/scratch/`: a source goes to `inbox/sources/`, a question to `inbox/questions.md`, a doubt about a wiki page to `inbox/checks.md`, your own thinking to `mine/insights/`, `mine/decisions/` or `mine/projects/`. Delete the rest.
+7. **Commit and push.** `git add -A`, `git diff --staged`, `git commit -m "review: YYYY-Www"`, then `git push`.
+
+## 5. Where the thinking layer fits
+`mine/` is not a learning exercise; it's goal G4. Claude proposes insight drafts into `mine/drafts/` and checks them with `/drafts`; you keep the ones you'd defend by writing your own page (§4 step 5). Two more rules:
+- **Insights** are one claim each. Your reasoning needs no citation; a fact you lean on links to the wiki page that cites it. When you stop holding one, archive it rather than delete it ([[03 Decision Log]] D-065).
+- **Decisions** about your own work and life go in `mine/decisions/`, from the Decision template, at a public level: no employer, product, team or figures. Decisions about this system go in [[03 Decision Log]] (D-066).
+
+## 6. `system/views/Review.base`
+Mirrored here because project chats can't see `system/`; change both in the same commit. Obsidian rewrites the file in its own style when you change a view, so copy it from the vault after any change. Bases syntax: https://obsidian.md/help/bases/syntax (checked 2026-09-24).
+```yaml
+properties:
+  file.name:
+    displayName: Page
+  note.status:
+    displayName: Status
+  note.type:
+    displayName: Type
+  note.updated:
+    displayName: Updated
+  note.sources:
+    displayName: Sources
+  note.created:
+    displayName: Created
+  note.origin:
+    displayName: Origin
+  note.related:
+    displayName: Related
+  note.checked:
+    displayName: Checked
+views:
+  - type: table
+    name: Needs attention
+    filters:
+      and:
+        - file.inFolder("wiki")
+        - file.ext == "md"
+        - or:
+            - status == "unverified"
+            - status == "contested"
+    groupBy:
+      property: status
+      direction: DESC
+    order:
+      - file.name
+      - type
+      - updated
+      - sources
+    sort:
+      - property: updated
+        direction: ASC
+    columnSize:
+      note.type: 103
+  - type: table
+    name: Draft queue
+    filters:
+      and:
+        - file.inFolder("mine/drafts")
+        - file.ext == "md"
+    order:
+      - file.name
+      - created
+      - checked
+      - related
+    sort:
+      - property: created
+        direction: ASC
+```
