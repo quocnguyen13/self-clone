@@ -2,7 +2,7 @@
 
 A research wiki that Claude Code compiles and maintains inside an Obsidian vault. You collect the sources and Claude writes the pages. Every fact on a page traces to a source file and carries that source's trust level. It follows Andrej Karpathy's [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) pattern.
 
-This repository is a public copy of a private vault, built on 2026-10-31 from commit `0854bc4`. It shows the system and what it produced. **It is not legal, regulatory or financial advice.** The wiki is a study aid compiled by an AI from public sources, and parts of it are marked unverified or contested.
+This repository is a public copy of a private vault, built on 2026-10-31 from commit `1e15ff7`. It shows the system and what it produced. **It is not legal, regulatory or financial advice.** The wiki is a study aid compiled by an AI from public sources, and parts of it are marked unverified or contested.
 
 ## How it works
 | Layer | Where | Who writes it |
@@ -40,7 +40,7 @@ The rules that make it trustworthy, all in `CLAUDE.md`:
 | `raw/` | Empty. The sources are other people's work, so they aren't republished. Links into `raw/` don't resolve here; the list below says where each source is |
 | `mine/` (the rest) | Empty: these are personal notes |
 
-A few personal details have been generalised in this copy.
+A few personal and workplace details have been generalised in this copy.
 
 ## What the tests showed
 - **MVP 1**, the core loop of ingest, ask and lint plus a thinking layer, closed on 2026-09-25 with all 6 exit criteria met.

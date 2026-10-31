@@ -88,7 +88,7 @@ From [[21 Roadmap]] §2, D-069 and D-070. It starts from [[87 MVP Retrospective]
 |---|---|---|
 | Q-015 | Hide the synced claude.ai skills (D-040): the `skillOverrides` entry still needs the names from `~/.claude/skills/synced` | When you're next at the terminal |
 | Q-008 | Which product-owner routines matter most | M0, with the MVP 2 scope |
-| Q-004 | Your bank's AI-tools policy | Before doc 36; M0 sets when |
+| Q-004 | Your employer's AI-tools policy | Before doc 36; M0 sets when |
 
 ## Parked in M6
 - **Page names in `log.md`.** `lint apply` and `ingest` log page counts, so `/drafts` can't say which operation changed a page an insight links to.

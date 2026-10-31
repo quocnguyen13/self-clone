@@ -88,7 +88,7 @@ From [[21 Roadmap]] §2:
 |---|---|---|
 | Q-015 | Hide the synced claude.ai skills (D-040): the `skillOverrides` entry still needs the names from `~/.claude/skills/synced` | When you're next at the terminal |
 | Q-008 | Which product-owner routines matter most | M7 |
-| Q-004 | Your bank's AI-tools policy | M8, with doc 36 |
+| Q-004 | Your employer's AI-tools policy | M8, with doc 36 |
 
 ## Parked in M5
 - **Uncited restating lines.** Lint reads an uncited line that restates claims cited in the same section as synthesis, not as a claim. It made that call on its own. Write it down as a rule if it starts to matter.

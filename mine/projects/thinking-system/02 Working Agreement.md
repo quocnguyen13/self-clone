@@ -5,7 +5,7 @@ status: active
 trust: working
 origin: claude
 created: 2026-09-16
-reviewed: 2026-10-20
+reviewed: 2026-10-31
 tags: [project/thinking-system, ways-of-working]
 ---
 
@@ -91,13 +91,14 @@ Rules:
 Every module has **one standing chat** in this Project, named `M<n> – <name>`. It isn't a one-off conversation: it's the permanent home of what that module owns, for the life of the project ([[03 Decision Log]] D-071).
 - **M0 – Project Management** is the thread this project started in. It owns the plan: scope, the roadmap, the decision log, retrospectives, handovers and this agreement (D-070). Foundation was its first piece of work.
 - **Build modules, M1 onward,** each run to an exit in [[21 Roadmap]] §2. When a module meets its exit, Claude writes a handover, and the thread stays open to maintain what the module built.
+- **Business threads, B0 onward,** are named `B<n> – <name>` and carry work that presents the product rather than builds it (D-129). They follow the same rules as module threads, and open with the same brief, with `Thread: B<n> – <name>` in its first line. B0 – Product Showcase is the first.
 - **Work can run over several days.** Keep going in the same chat.
 
 **Who owns what.** Work goes to the thread that owns the part it changes. If it changes the plan or the scope, or needs larger changes in what two threads own, it goes to M0 first. M0 splits it and briefs the owning threads.
 
 | Thread                   | Owns and maintains                                                                                                                                                      |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| M0 – Project Management  | Docs 00–04, 10–13, 20–22, 30, 31, 36, 50, 60 and 71; the handovers and retrospectives (80 onward); each milestone's scope; work that crosses modules; the Jira project: items, epics, sprints and releases (D-104); MVP 2's exit tests (D-117) |
+| M0 – Project Management  | Docs 00 and 02–04, 10–13, 20–22, 30, 31, 36, 50, 60 and 71; the handovers and retrospectives (80 onward); each milestone's scope; work that crosses modules; the Jira project: items, epics, sprints and releases (D-104); MVP 2's exit tests (D-117) |
 | M1 – Vault and Git       | Folder structure and naming ([[32 Vault Blueprint]] §1, §7); `.gitignore` and `.gitattributes`; Obsidian settings and the Web Clipper ([[70 Obsidian Essentials]] §1–2) |
 | M2 – Connect Claude Code | `CLAUDE.md`, `.claude/settings.json`, `system/conventions.md` and the templates ([[34 Templates]]); [[40 Claude Operating Instructions]] §1–3 and §6                    |
 | M3 – First Ingests       | Nothing since M7 opened: the `ingest` skill, the zone contract, the index and log formats and the ingest review all passed to M7 (D-084). The thread keeps the record of the first ingests ([[83 M3 Handover]]) |
@@ -107,6 +108,7 @@ Every module has **one standing chat** in this Project, named `M<n> – <name>`.
 | M7 – Batch Ingest and Trust | The `ingest` skill (40 §4.1): sets, trust levels, the conflict review and the set reviews in `system/ingest/`; [[33 Input Zones]]; the `index.md` and `log.md` formats (32 §5–6); reviewing an ingest (70 §3); the trust table in `system/conventions.md`; the ingest set tests I1–I7. Drafts the rule changes for doc 31 §2–3, which M0 accepts |
 | M8 – Research and Import | The `research` and `import` skills (40 §4.6–4.7); `ingest/ai-source.md`, a Claude output's path through `/ingest` (B-003, D-098, D-102); `system/research/`, its reports and the capture list (D-097); [[33 Input Zones]] §7; the tests IM1–IM6, RS1–RS4 and AI1–AI4. Closed 2026-10-14; the thread maintains them |
 | M9 – Large Documents | `ingest/large-source.md`, the procedure for a large document (40 §4.1): the map run and `/ingest part`; the FSMA 2000 map and its part pages; the tests LD1–LD8. Closed 2026-10-20; the thread maintains them, and compiles the open parts of the FSMA plan when you ask |
+| B0 – Product Showcase | Docs 01 and 05–07; the demo (B-030); the public copy's kit in `system/public/` and the public repo `self-clone` (D-125); E-09's items in Release S1 (D-129, D-130) |
 
 Where two rows touch the same file, the more specific row owns that part. A skill's mirror in doc 40 changes with the skill, in the same commit. A thread may make small edits that follow from its own work in files another thread owns, such as a pointer in `CLAUDE.md`, a line in `system/conventions.md` or a cross-reference, and lists them in its change summary. Anything larger goes to the owning thread as a request.
 
@@ -169,10 +171,10 @@ Where two rows touch the same file, the more specific row owns that part. A skil
   ```
   M3 · First Ingests · in progress
   ```
-  A build module is *starting*, *in progress*, *closing* or *closed*. After its exit, its thread is *maintaining* whenever it works on what the module owns, e.g. `M5 · Lint and Review · maintaining`. M0 is *in progress* while it works on the plan. Module names and order are in [[21 Roadmap]] §2.
+  A build module is *starting*, *in progress*, *closing* or *closed*. After its exit, its thread is *maintaining* whenever it works on what the module owns, e.g. `M5 · Lint and Review · maintaining`. A business thread uses the same states, e.g. `B0 · Product Showcase · in progress`. M0 is *in progress* while it works on the plan. Module names and order are in [[21 Roadmap]] §2.
 - **Diagrams are Mermaid** (D-073), drawn to these rules (D-074):
   - First line `%%{init: {"flowchart": {"curve": "step", "useMaxWidth": true, "nodeSpacing": 12, "rankSpacing": 25, "padding": 8, "subGraphTitleMargin": {"top": 4, "bottom": 8}}}}%%`: the diagram scales to the window width and uses elbow connectors, not curves.
-  - Flowcharts only. A lifecycle is drawn as a flowchart, or as a table when its arrows would cross.
+  - Flowcharts only. A lifecycle is drawn as a flowchart, or as a table when its arrows would cross. An approved set of other types follows with B-002 (D-127).
   - Fit the window: top-down by default, no wider than about 800 px (overview grids and maps up to about 1,100 px), labels broken with `<br/>`. The compact spacing in the first line helps.
   - Every group names its level: `Stage n · …`, `Role n · …`, `Location · …`, `User story US-nn · …`, `Legend · …`. One level per layer of grouping.
   - A legend whenever colour or shape carries meaning: inside the diagram, top-left where the layout allows, or once per section for diagrams that share it.
@@ -183,7 +185,7 @@ Where two rows touch the same file, the more specific row owns that part. A skil
 - **Speak up if something doesn't fit.** The system should fit how you work, not the other way round.
 
 ## 9. Safety in these chats
-The same traffic-light rule that governs the vault applies to anything you paste or upload here. These chats are not a bank-approved tool, so share only green content, or amber content that has been sanitized.
+The same traffic-light rule that governs the vault applies to anything you paste or upload here. These chats are not an employer-approved tool, so share only green content, or amber content that has been sanitized.
 
 ## 10. Agreed preferences
 | Topic | Agreement | Date |

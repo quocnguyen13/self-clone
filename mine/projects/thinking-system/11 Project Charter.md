@@ -39,8 +39,8 @@ The LLM does the bookkeeping: summarizing, cross-referencing, filing, flagging c
 - Enough Obsidian to read, review, and search the vault ([[70 Obsidian Essentials]])
 
 **Out of scope for the MVP**
-- **Bank data governance (parked as doc 36).** The MVP takes personal and public sources only, so the rules aren't needed yet. They get written before any work material enters the vault.
-- Running any of this on a bank device or against bank systems
+- **Work data governance (parked as doc 36).** The MVP takes personal and public sources only, so the rules aren't needed yet. They get written before any work material enters the vault.
+- Running any of this on a work device or against work systems
 - Product-owner workflows (now jobs and standards, MVP 3: [[10 Product Vision]] §4.1)
 - Sync, phone capture, semantic search, custom tooling
 
@@ -85,7 +85,7 @@ The LLM does the bookkeeping: summarizing, cross-referencing, filing, flagging c
 | The wiki becomes confidently wrong | Citation rule, unverified status, lint, git diffs ([[31 Trust and Provenance]]) |
 | Claude's own summaries get treated as evidence | Wiki pages cite `raw/`, never other wiki pages, as their source of fact |
 | I stop reading what Claude writes | One review per set, with conflicts and the weakest facts first, and nothing compiled before I answer the brief (D-085, D-086); weekly lint |
-| Bank material drifts into the vault before the rules exist | One standing rule in [[31 Trust and Provenance]] §4 until doc 36 is written |
+| Work material drifts into the vault before the rules exist | One standing rule in [[31 Trust and Provenance]] §4 until doc 36 is written |
 | Claude edits or deletes the wrong thing | Permission rules, manual approval outside the allowed paths, git history |
 | Usage limits run out mid-task | Sets of up to 8 files; a stopped set resumes from its set review (D-086); check `/usage` |
 

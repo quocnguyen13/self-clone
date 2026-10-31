@@ -49,7 +49,7 @@ Claude delivers changed files → you drop them into `mine/projects/thinking-sys
 |---|---|---|
 | Q-013 | Your first five sources. The LLM Wiki gist is source 1; four more are yours. | Start of M3 |
 | Q-008 | Which product-owner routines matter most | M7 |
-| Q-004 | Your bank's AI-tools policy | M8, with doc 36 |
+| Q-004 | Your employer's AI-tools policy | M8, with doc 36 |
 
 ## Risks to watch in M2
 - **An elevated terminal.** Your Windows account is named Admin. Start Claude Code from a normal terminal, never one opened with "Run as administrator".

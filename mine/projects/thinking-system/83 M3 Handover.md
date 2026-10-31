@@ -78,7 +78,7 @@ All accepted on 2026-09-22.
 |---|---|---|
 | Q-015 | Hide the synced claude.ai skills (D-040): the `skillOverrides` entry still needs the names from `~/.claude/skills/synced` | When you're next at the terminal |
 | Q-008 | Which product-owner routines matter most | M7 |
-| Q-004 | Your bank's AI-tools policy | M8, with doc 36 |
+| Q-004 | Your employer's AI-tools policy | M8, with doc 36 |
 
 ## Parked in M3
 - Matuschak's five principle notes and a primary Zettelkasten source.

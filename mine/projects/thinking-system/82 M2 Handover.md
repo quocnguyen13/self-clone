@@ -72,7 +72,7 @@ All accepted on 2026-09-22.
 |---|---|---|
 | Q-015 | Keep the remaining synced skills in vault sessions, or switch some off? | Start of M3 |
 | Q-008 | Which product-owner routines matter most | M7 |
-| Q-004 | Your bank's AI-tools policy | M8, with doc 36 |
+| Q-004 | Your employer's AI-tools policy | M8, with doc 36 |
 
 ## Risks to watch in M3
 - **Moving a source into `raw/`.** The deny rule on `raw/` might also block Claude's `mv` command. If it does, move the file yourself with `Move-Item`, or drag it in Obsidian, and tell Claude the final path. That keeps `raw/` just as safe. Test it on the first ingest.

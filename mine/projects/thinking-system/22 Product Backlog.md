@@ -88,7 +88,6 @@ Gets material in: web clips, files, Claude outputs. Needs N1, N2.
 | ID | Key | Item | Type | Depends on | Owner | Decisions |
 |---|---|---|---|---|---|---|
 | B-001 | KAN-1 | Office documents as sources (§3) | Feature | Doc 36, for work files (D-018) | M3, M1 | — |
-| B-002 | KAN-2 | Mermaid support (§3) | Feature | — | M3 or M4 | — |
 | B-004 | KAN-4 | Research a topic: Claude researches a new topic and returns a summary in which every fact names its source, plus the primary sources for you to clip (D-075, D-083) | Feature | B-003 | M8 (D-084) | D-095 to D-097 |
 | B-005 | KAN-5 | Phone capture and sync | Feature | — | M1 | — |
 | B-037 | KAN-37 | `/import` (§3): before ingest, checks new files against `raw/` for duplicates and newer versions, and recommends what to do (D-083) | Feature | Doc 31 §3, superseded claims | M8 (D-084) | D-099, D-101 |
@@ -138,6 +137,7 @@ Produces work outputs to your standards. Need N4.
 
 | ID | Key | Item | Type | Depends on | Owner | Decisions |
 |---|---|---|---|---|---|---|
+| B-002 | KAN-2 | Diagrams (§3): the right Mermaid type and style, the outputs that need one, `/diagram <page>`, and up to 3 questions before drawing when the need is unclear. Explanatory and UI diagrams, and the skills' responses. Reopened 2026-10-31 (moved from E-01); MVP 3 candidate | Feature | — | MVP 3 module | D-073, D-074, D-126 to D-128 |
 | B-017 | KAN-17 | Standards library: content, inputs, template, diagram style and audience for each output, as files in the vault, specified in doc 35 | Feature | — | New module | — |
 | B-018 | KAN-18 | PRD job | Feature | B-017 | New module | — |
 | B-019 | KAN-19 | Stakeholder brief job | Feature | B-017 | New module | — |
@@ -149,7 +149,7 @@ Nothing changes without your say, and confidential material stays out. Need N5.
 
 | ID | Key | Item | Type | Depends on | Owner | Decisions |
 |---|---|---|---|---|---|---|
-| B-022 | KAN-22 | Data governance (doc 36), with the bank AI-tools policy (Q-004) | Doc | — | M0 | — |
+| B-022 | KAN-22 | Data governance (doc 36), with the employer's AI-tools policy (Q-004) | Doc | — | M0 | — |
 | B-023 | KAN-23 | Settle Q-015: claude.ai skills that sync into vault sessions | Chore | — | M2 | — |
 | — | KAN-49 | `CLAUDE.md`: no offer to delete "as an exception to the rule" (MVP 2 regression, test 10). **Done 2026-10-20** | Chore | — | M2 | D-117, D-120 |
 
@@ -164,13 +164,17 @@ Keeps running with little effort, and changes safely. Needs N1, N5.
 | B-027 | KAN-27 | Skills no longer mirrored in doc 40; it links to the skill files instead | Chore | Your view on the mirrors ([[87 MVP Retrospective]] §3.1) | M2 to M6 | — |
 
 ### E-09 · Showcase and documentation · KAN-47
-Shows the product and how it was built. Goal: show the work (D-079), when you decide an MVP is the showcase moment (D-082).
+Shows the product and how it was built. Goal: show the work (D-079), when you decide an MVP is the showcase moment (D-082). Release S1's items are owned by B0 – Product Showcase (D-129, D-130).
 
 | ID | Key | Item | Type | Depends on | Owner | Decisions |
 |---|---|---|---|---|---|---|
-| B-028 | KAN-28 | Case study (doc 01): problem, your role, approach, key decisions, results, lessons | Doc | — | M0 | D-123: in Release S1 |
-| B-029 | KAN-29 | Public repository: a cleaned copy with a README and a licence. Keeps the system files and project docs; leaves out `raw/` (others' copyright), your notes in `mine/` and anything personal | Feature | D-018 check of every file | M0, M1 | D-123: in Release S1; in progress, rules in D-125 |
-| B-030 | KAN-30 | Demo: screenshots and a short walkthrough of one ingest and one `/ask` | Doc | — | M0 | D-123: in Release S1 |
+| B-028 | KAN-28 | Case study (doc 01): problem, your role, approach, key decisions, results, lessons | Doc | — | B0 | D-123, D-130: in Release S1 |
+| B-029 | KAN-29 | Public repository: a cleaned copy with a README and a licence. Keeps the system files and project docs; leaves out `raw/` (others' copyright), your notes in `mine/` and anything personal. **Done 2026-10-31:** github.com/quocnguyen13/self-clone | Feature | D-018 check of every file | M0, M1 | D-123, D-125 |
+| B-030 | KAN-30 | Demo: screenshots and a short walkthrough of one ingest and one `/ask` | Doc | — | B0 | D-123, D-130: in Release S1 |
+| — | KAN-52 | Public copy refresh (§3): `make-public-copy.ps1` updates the existing `self-clone` and keeps its git history | Feature | D-125 | B0 | D-130: in Release S1; D-131 |
+| — | KAN-53 | User manual (doc 05): set up and use the system from scratch, with only the public repo and the manual | Doc | B-029; KAN-52 to publish | B0 | D-130: in Release S1 |
+| — | KAN-54 | Pitch presentation (doc 06): the project in every aspect: project management, product development and the use cases | Doc | B-028, B-030 | B0 | D-130: in Release S1 |
+| — | KAN-55 | LinkedIn series (doc 07): how a non-engineer built a system that thinks the way you do; working titles in Jira | Doc | B-028, B-029 | B0 | D-130: in Release S1 |
 | B-031 | KAN-31 | Success metrics (doc 12): definitions, baselines and targets per milestone | Doc | — | M0 | — |
 | B-032 | KAN-32 | Market and alternatives (doc 13): what else solves N1–N4, and why this one | Doc | Research | M0 | — |
 | B-033 | KAN-33 | Risk register (doc 04), gathering the risks now spread across doc 11 §10 and the handovers | Doc | — | M0 | — |
@@ -193,16 +197,36 @@ Items with more than a one-line need. Others get a section here when they are re
 **Open questions:** which of the three formats matter most; how a citation points into a slide or a cell.
 **Constraint:** until doc 36 exists, only personal and public Office files qualify (D-018). Work files are most of the reason for this item, so its full value waits on doc 36.
 
-### B-002 · Mermaid support
-**Need:** diagrams as part of the knowledge base.
-**Raised:** 2026-09-25, M0.
-**Two readings, scope to confirm:**
-- **Input: Mermaid scripts as sources.** A Mermaid block inside a Markdown source is already readable text. A standalone `.mmd` file is plain text too, but untested and not in the blueprint's list for `raw/` ([[32 Vault Blueprint]] §1).
-- **Output: Claude draws Mermaid diagrams in wiki pages,** such as the overview, analyses or concept maps. Obsidian renders them without a plugin.
+### B-002 · Diagrams
+**Need:** diagrams that help you understand and decide. Claude chooses the right Mermaid type and style, knows which outputs need one, adds one to a page you name, and asks before drawing when the need isn't clear.
+**Raised:** 2026-09-25, M0, as "Mermaid support". On hold from 2026-09-25. **Reopened and widened 2026-10-31,** at your request, with your answers to six questions (D-126 to D-128). Moved from E-01 to E-06, where the diagram rules are already the first standard.
+**Milestone:** MVP 3 candidate. MVP 3's scope is set after the usage period (D-124), and B-002 is scheduled then.
 
-**Design question for the output reading:** a diagram is a set of claims, one per arrow. The provenance rule (D-021) needs a line for it; for example, a diagram only restates claims cited on the same page, and `lint` checks it like any other claim.
-**Open question:** input, output, or both.
-**On hold:** 2026-09-25, at your request. Out of MVP 2 scoping until you reopen it. The format is settled meanwhile: any diagram is Mermaid (D-073).
+**Scope**
+| Part | What it does |
+|---|---|
+| 1. Style guide | Which type fits which purpose, and the style rules for each type (D-127): flowchart for a process, decision or structure; sequence for who does what, in order; state for statuses and transitions; timeline for dates; mindmap for a concept map; quadrant for prioritisation; a user flow, drawn as a flowchart, for UIs. Every type keeps D-074's look and renders in Obsidian and on GitHub |
+| 2. Decision rules | Which outputs need a diagram: for example 3 or more steps in order, several actors, statuses with transitions, a hierarchy, or a comparison on two axes. And which don't: a single fact, a definition, a short list |
+| 3. Diagrams in responses | `/ask`, `/research`, `/lint` and the set reviews include a diagram when the rules say so, and none otherwise (D-126) |
+| 4. `/diagram <page>` | Adds a diagram to the page you name, and to nothing else. It runs only on your command, logs the run and commits after your review, like the other operations |
+| 5. Clarify first | When the request leaves the purpose, the audience and level of detail, or the scope open, Claude asks about those only: at most 3 questions in one go, each with a recommended answer, then it draws. The type follows from the answers. A clear request gets no questions (D-126) |
+| 6. UI diagrams | User flows and screen maps for product work, mainly for MVP 3's PRD job (B-018). Mermaid has no wireframe type, so a screen is drawn as labelled blocks; the build tests how far that goes |
+| 7. Mermaid files as sources | The original input reading, kept as the smallest part: a `.mmd` file is accepted in `inbox/sources/` as plain text |
+
+**Provenance (D-128):** a diagram on a wiki page or in an `/ask` answer restates claims already cited in the text of the same page or answer. A node or arrow with nothing behind it is an uncited claim and makes the page `unverified`; `/lint` checks diagrams with the other claims.
+
+**Done when** (a draft; it becomes user stories in [[20 Product Requirements]] when B-002 is scheduled):
+- [ ] The style guide and the decision rules are in the vault, and `CLAUDE.md` points to them.
+- [ ] Each approved type renders without errors in Obsidian and on GitHub.
+- [ ] Asked a question whose answer is a sequence or a process, `/ask` includes a fitting diagram; asked for a definition, it includes none.
+- [ ] `/diagram <page>` adds a diagram that restates only claims cited on that page, logs the run and waits for your review.
+- [ ] `/lint` flags a planted diagram arrow with no cited claim behind it.
+- [ ] Given an unclear request, Claude asks at most 3 questions, each with a recommended answer and none the request already answers; given a clear one, it asks none.
+- [ ] A user flow and a screen map for a sample feature read clearly at window width.
+
+**Depends on:** each type's rules, written and rendered during the build (D-127). B-017, the standards library, then uses the style guide for each output's diagram style.
+**Owner:** the MVP 3 module.
+**Open for the build:** where the rules live (a `diagram` skill that the other skills point to, or a file in `system/`); and how D-128 applies to UI diagrams, which design something rather than restate sources (settled with B-018).
 
 ### B-003 · Claude outputs as sources
 **Need:** save a Claude output (a chat answer, a research report, an artifact) into the vault as material the wiki can use, so nothing useful disappears into chat history ([[11 Project Charter]] §1).
@@ -280,6 +304,15 @@ Claude's lean: **a**, since it keeps `raw/` immutable and citations exact (D-042
 **Built in M9 (closed 2026-10-20), tests 8 of 8:** the whole FSMA 2000 mapped (49 Parts, 36 Schedules) from its contents page, Parts II, 4A and XVI compiled and Part 1A compared, across four sessions, with one stop and resume. Every citation into the Act gives its page and section. Rules added at the close: D-116. KAN-38 is In Review; Done on your word.
 - **A file with no contents pages,** such as the whole-Act PDF, is mapped from a clip of the publisher's contents page, the map's companion with no source page of its own (D-115, accepted 2026-10-17).
 **Constraint:** a copyrighted book stays private in `raw/` and never goes into a public showcase (D-079).
+
+### KAN-52 · Public copy refresh
+**Need:** publish each finished showcase piece to `self-clone` without rebuilding the repo by hand.
+**Raised:** 2026-10-31, M0 (D-130). **Owner:** B0.
+**Done when:**
+- [x] `make-public-copy.ps1` updates the existing `self-clone`: it builds as today, with the same checks, then replaces everything in the repo except `.git`, so that `git status` shows exactly what changed since the last version.
+- [x] The change list also generalises the other workplace references in the project docs (about 30 lines), as the role was (D-130).
+- [ ] The script never commits, pushes or deletes outside the repo it updates, and Claude checks the change before you push it.
+**Built 2026-10-31 in B0** (D-131): `-Refresh` mode, with checks on the target before anything changes; 24 workplace lines in 18 files, so 28 with the role's 4; workplace phrasing added to the closing scan; the repo's own address as the scan's one exception. Outside the repo, the script removes only its own empty build folder (your choice). Tested in PowerShell 7 on a copy of the vault. The third box is ticked once Claude has checked the first refresh of `self-clone` and you have pushed it.
 
 ### KAN-48 · `ask`: the wiki's own state, and the no-page path
 **Need:** `/ask` reports the wiki's own state correctly, and has one output path when no page covers the subject but nearby pages exist.

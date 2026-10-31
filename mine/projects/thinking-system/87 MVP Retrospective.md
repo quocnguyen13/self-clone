@@ -185,7 +185,7 @@ Doc 36 comes before any job or source uses work material (D-018).
 2. Whether D-063 stays: a kept insight means you write the page.
 3. The first page in `mine/decisions/`.
 4. Whether the product-owner workflows (doc 35) come into MVP 2, and which routines matter most (Q-008). Partly answered by §6: a PRD is the first job you named. See 13.
-5. When doc 36 (Data Governance) is written, and your bank's AI-tools policy (Q-004). Either way, doc 36 comes before any work material (D-018).
+5. When doc 36 (Data Governance) is written, and your employer's AI-tools policy (Q-004). Either way, doc 36 comes before any work material (D-018).
 6. The first domain sources: which of your domains the wiki covers next (D-039). The UK financial system is a candidate (§6). See T6.
 7. The parked items: page names in `log.md`, a re-read check for decisions, the M5 leftovers, and Q-015.
 8. The module references still to update: [[11 Project Charter]] §4, [[30 System Architecture]] §3, and the due dates on D-018, Q-004, Q-007 and Q-008.

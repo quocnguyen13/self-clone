@@ -25,7 +25,7 @@ Back to [[00 Project Home]] · Modules in [[21 Roadmap]] §2
 
 ## Decisions carried into M1
 - D-001 to D-025, all accepted. D-004 and D-005 are superseded by D-019 and D-020.
-- Bank data governance is parked as doc 36 (D-018). Until it exists, one rule stands: **personal and public sources only.**
+- Work data governance is parked as doc 36 (D-018). Until it exists, one rule stands: **personal and public sources only.**
 - Notes in English by default. No migration assumed. Phone capture deferred to M8.
 
 ## State of the vault
@@ -45,7 +45,7 @@ Nothing is built yet. Obsidian is not installed, and the vault does not exist. M
 |---|---|---|
 | Q-013 | Your first five sources. The LLM Wiki gist is source 1; four more are yours. | Start of M3 |
 | Q-008 | Which product-owner routines matter most | M7 |
-| Q-004 | Your bank's AI-tools policy | M8, with doc 36 |
+| Q-004 | Your employer's AI-tools policy | M8, with doc 36 |
 
 ## Risks to watch in M1
 - Building folders that don't match the blueprint, which would break the permission rules later. Check §1 of [[32 Vault Blueprint]] as you go.
